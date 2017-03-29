@@ -132,62 +132,77 @@ def _check_lal_pars(p):
         lalsimulation.SimInspiralWaveformParamsInsertNonGRDChi6L(lal_pars, float(p['dchi6L']))
     if 'dchi7' in p:
         lalsimulation.SimInspiralWaveformParamsInsertNonGRDChi7(lal_pars, float(p['dchi7']))
-## dXi:
-#    if p['dxi1']:
-#        lalsimulation.SimInspiralWaveformParamsInsertNonGRDXi1(lal_pars, float(p['dxi1']))
-#    if p['dxi2']:
-#        lalsimulation.SimInspiralWaveformParamsInsertNonGRDXi2(lal_pars, float(p['dxi2']))
-#    if p['dxi3']:
-#        lalsimulation.SimInspiralWaveformParamsInsertNonGRDXi3(lal_pars, float(p['dxi3']))
-#    if p['dxi4']:
-#        lalsimulation.SimInspiralWaveformParamsInsertNonGRDXi4(lal_pars, float(p['dxi4']))
-#    if p['dxi5']:
-#        lalsimulation.SimInspiralWaveformParamsInsertNonGRDXi5(lal_pars, float(p['dxi5']))
-#    if p['dxi6']:
-#        lalsimulation.SimInspiralWaveformParamsInsertNonGRDXi6(lal_pars, float(p['dxi6']))
-## Sigma:
-#    if p['sigma1']:
-#        lalsimulation.SimInspiralWaveformParamsInsertNonGRSigma1(lal_pars, float(p['sigma1']))
-#    if p['sigma2']:
-#        lalsimulation.SimInspiralWaveformParamsInsertNonGRSigma2(lal_pars, float(p['sigma2']))
-#    if p['sigma3']:
-#        lalsimulation.SimInspiralWaveformParamsInsertNonGRSigma3(lal_pars, float(p['sigma3']))
-#    if p['sigma4']:
-#        lalsimulation.SimInspiralWaveformParamsInsertNonGRSigma4(lal_pars, float(p['sigma4']))
-## Alpha:
-#    if p['alpha1']:
-#        lalsimulation.SimInspiralWaveformParamsInsertNonGRAlpha1(lal_pars, float(p['alpha1']))
-#    if p['alpha2']:
-#        lalsimulation.SimInspiralWaveformParamsInsertNonGRAlpha2(lal_pars, float(p['alpha2']))
-#    if p['alpha3']:
-#        lalsimulation.SimInspiralWaveformParamsInsertNonGRAlpha3(lal_pars, float(p['alpha3']))
-#    if p['alpha4']:
-#        lalsimulation.SimInspiralWaveformParamsInsertNonGRAlpha4(lal_pars, float(p['alpha4']))
-#    if p['alpha5']:
-#        lalsimulation.SimInspiralWaveformParamsInsertNonGRAlpha5(lal_pars, float(p['alpha5']))
-## Beta:
-#    if p['beta1']:
-#        lalsimulation.SimInspiralWaveformParamsInsertNonGRBeta1(lal_pars, float(p['beta1']))
-#    if p['beta2']:
-#        lalsimulation.SimInspiralWaveformParamsInsertNonGRBeta2(lal_pars, float(p['beta2']))
-#    if p['beta3']:
-#        lalsimulation.SimInspiralWaveformParamsInsertNonGRBeta3(lal_pars, float(p['beta3']))
-## Alpha PPE:
-#    if p['alphaPPE']:
-#        lalsimulation.SimInspiralWaveformParamsInsertNonGRAlphaPPE(lal_pars, float(p['alphaPPE']))
-#    if p['alphaPPE0']:
-#        lalsimulation.SimInspiralWaveformParamsInsertNonGRAlphaPPE0(lal_pars, float(p['alphaPPE0']))
-#    if p['alphaPPE1']:
-#        lalsimulation.SimInspiralWaveformParamsInsertNonGRAlphaPPE1(lal_pars, float(p['alphaPPE1']))
-#    if p['alphaPPE2']:
-#        lalsimulation.SimInspiralWaveformParamsInsertNonGRAlphaPPE2(lal_pars, float(p['alphaPPE2']))
-#    if p['alphaPPE3']:
-#        lalsimulation.SimInspiralWaveformParamsInsertNonGRAlphaPPE3(lal_pars, float(p['alphaPPE3']))
-#    if p['alphaPPE4']:
-#        lalsimulation.SimInspiralWaveformParamsInsertNonGRAlphaPPE4(lal_pars, float(p['alphaPPE4']))
-#    if p['alphaPPE5']:
-#        lalsimulation.SimInspiralWaveformParamsInsertNonGRAlphaPPE5(lal_pars, float(p['alphaPPE5']))
-
+# dXi:
+    if 'dxi1' in p:
+        lalsimulation.SimInspiralWaveformParamsInsertNonGRDXi1(lal_pars, float(p['dxi1']))
+    if 'dxi2' in p:
+        lalsimulation.SimInspiralWaveformParamsInsertNonGRDXi2(lal_pars, float(p['dxi2']))
+    if 'dxi3' in p:
+        lalsimulation.SimInspiralWaveformParamsInsertNonGRDXi3(lal_pars, float(p['dxi3']))
+    if 'dxi4' in p:
+        lalsimulation.SimInspiralWaveformParamsInsertNonGRDXi4(lal_pars, float(p['dxi4']))
+    if 'dxi5' in p:
+        lalsimulation.SimInspiralWaveformParamsInsertNonGRDXi5(lal_pars, float(p['dxi5']))
+    if 'dxi6' in p:
+        lalsimulation.SimInspiralWaveformParamsInsertNonGRDXi6(lal_pars, float(p['dxi6']))
+# Sigma:
+    if 'dsigma1' in p:
+        lalsimulation.SimInspiralWaveformParamsInsertNonGRDSigma1(lal_pars, float(p['dsigma1']))
+    if 'dsigma2' in p:
+        lalsimulation.SimInspiralWaveformParamsInsertNonGRDSigma2(lal_pars, float(p['dsigma2']))
+    if 'dsigma3' in p:
+        lalsimulation.SimInspiralWaveformParamsInsertNonGRDSigma3(lal_pars, float(p['dsigma3']))
+    if 'dsigma4' in p:
+        lalsimulation.SimInspiralWaveformParamsInsertNonGRDSigma4(lal_pars, float(p['dsigma4']))
+# Alpha:
+    if 'dalpha1' in p:
+        lalsimulation.SimInspiralWaveformParamsInsertNonGRDAlpha1(lal_pars, float(p['dalpha1']))
+    if 'dalpha2' in p:
+        lalsimulation.SimInspiralWaveformParamsInsertNonGRDAlpha2(lal_pars, float(p['dalpha2']))
+    if 'dalpha3' in p:
+        lalsimulation.SimInspiralWaveformParamsInsertNonGRDAlpha3(lal_pars, float(p['dalpha3']))
+    if 'dalpha4' in p:
+        lalsimulation.SimInspiralWaveformParamsInsertNonGRDAlpha4(lal_pars, float(p['dalpha4']))
+    if 'dalpha5' in p:
+        lalsimulation.SimInspiralWaveformParamsInsertNonGRDAlpha5(lal_pars, float(p['dalpha5']))
+# Beta:
+    if 'dbeta1' in p:
+        lalsimulation.SimInspiralWaveformParamsInsertNonGRDBeta1(lal_pars, float(p['dbeta1']))
+    if 'dbeta2' in p:
+        lalsimulation.SimInspiralWaveformParamsInsertNonGRDBeta2(lal_pars, float(p['dbeta2']))
+    if 'dbeta3' in p:
+        lalsimulation.SimInspiralWaveformParamsInsertNonGRDBeta3(lal_pars, float(p['dbeta3']))
+# Alpha PPE:
+    if 'alphaPPE' in p:
+        lalsimulation.SimInspiralWaveformParamsInsertNonGRAlphaPPE(lal_pars, float(p['alphaPPE']))
+    if 'alphaPPE0' in p:
+        lalsimulation.SimInspiralWaveformParamsInsertNonGRAlphaPPE0(lal_pars, float(p['alphaPPE0']))
+    if 'alphaPPE1' in p:
+        lalsimulation.SimInspiralWaveformParamsInsertNonGRAlphaPPE1(lal_pars, float(p['alphaPPE1']))
+    if 'alphaPPE2' in p:
+        lalsimulation.SimInspiralWaveformParamsInsertNonGRAlphaPPE2(lal_pars, float(p['alphaPPE2']))
+    if 'alphaPPE3' in p:
+        lalsimulation.SimInspiralWaveformParamsInsertNonGRAlphaPPE3(lal_pars, float(p['alphaPPE3']))
+    if 'alphaPPE4' in p:
+        lalsimulation.SimInspiralWaveformParamsInsertNonGRAlphaPPE4(lal_pars, float(p['alphaPPE4']))
+    if 'alphaPPE5' in p:
+        lalsimulation.SimInspiralWaveformParamsInsertNonGRAlphaPPE5(lal_pars, float(p['alphaPPE5']))
+# Beta PPE:
+    if 'betaPPE' in p:
+        lalsimulation.SimInspiralWaveformParamsInsertNonGRBetaPPE(lal_pars, float(p['betaPPE']))
+    if 'betaPPE0' in p:
+        lalsimulation.SimInspiralWaveformParamsInsertNonGRBetaPPE0(lal_pars, float(p['betaPPE0']))
+    if 'betaPPE1' in p:
+        lalsimulation.SimInspiralWaveformParamsInsertNonGRBetaPPE1(lal_pars, float(p['betaPPE1']))
+    if 'betaPPE2' in p:
+        lalsimulation.SimInspiralWaveformParamsInsertNonGRBetaPPE2(lal_pars, float(p['betaPPE2']))
+    if 'betaPPE3' in p:
+        lalsimulation.SimInspiralWaveformParamsInsertNonGRBetaPPE3(lal_pars, float(p['betaPPE3']))
+    if 'betaPPE4' in p:
+        lalsimulation.SimInspiralWaveformParamsInsertNonGRBetaPPE4(lal_pars, float(p['betaPPE4']))
+    if 'betaPPE5' in p:
+        lalsimulation.SimInspiralWaveformParamsInsertNonGRBetaPPE5(lal_pars, float(p['betaPPE5']))
+    
     return lal_pars
 
 def _lalsim_td_waveform(**p):
